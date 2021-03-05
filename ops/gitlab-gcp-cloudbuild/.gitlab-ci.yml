@@ -1,0 +1,27 @@
+image: docker:latest
+
+api-deploy-to-staging:
+  stage: deploy
+  only:
+    - staging
+  image: google/cloud-sdk
+  services:
+    - docker:dind
+  script:
+    - echo $GCP_CI_SA_PK_STAGING > gcp-pk.json
+    - gcloud auth activate-service-account --key-file gcp-pk.json
+    - gcloud config set project $GCP_PROJECT_ID_STAGING
+    - gcloud builds submit . --config=./foo/cloudbuild-staging.yaml
+
+api-deploy-to-prod:
+  stage: deploy
+  only:
+    - main
+  image: google/cloud-sdk
+  services:
+    - docker:dind
+  script:
+    - echo $GCP_CI_SA_PK_PROD > gcp-pk.json
+    - gcloud auth activate-service-account --key-file gcp-pk.json
+    - gcloud config set project $GCP_PROJECT_ID_PROD
+    - gcloud builds submit . --config=./foo/cloudbuild-prod.yaml
