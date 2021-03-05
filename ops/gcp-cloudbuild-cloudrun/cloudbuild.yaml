@@ -1,0 +1,49 @@
+steps:
+
+  # fetch env secret
+  - name: gcr.io/cloud-builders/gcloud
+    entrypoint: 'bash'
+    args: [ 
+      '-c', 
+      "gcloud secrets versions access latest \
+      --secret=env --format='get(payload.data)' | tr '_-' '/+' | base64 -d > ./foo/.env"
+    ]
+
+  # fetch pk secret
+  - name: gcr.io/cloud-builders/gcloud
+    entrypoint: 'bash'
+    args: [ 
+      '-c', 
+      "gcloud secrets versions access latest \
+      --secret=pk --format='get(payload.data)' | tr '_-' '/+' | base64 -d > ./foo/pk.json"
+    ]
+
+  # build api image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'build', 
+      '-t', 'europe-north1-docker.pkg.dev/$PROJECT_ID/foo/v1:latest',
+      '-f', './foo/Dockerfile',
+      './foo',
+    ]
+    
+  # push api image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'push', 'europe-north1-docker.pkg.dev/$PROJECT_ID/foo/v1:latest']
+    
+  # deploy api
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: [
+      'alpha',
+      'run',
+      'deploy',
+      'api',
+      '--image', 'europe-north1-docker.pkg.dev/$PROJECT_ID/foo/v1:latest',
+      '--region', 'europe-north1',
+      '--platform', 'managed',
+      '--allow-unauthenticated',
+      '--ingress', 'internal-and-cloud-load-balancing',
+      '--min-instances', '1',
+      '--cpu', '1',
+      '--memory', '1G'
+    ]

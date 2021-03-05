@@ -1,0 +1,3 @@
+- cloud secrets
+- artifact registry
+- cloud run with 1 min instances and no external ingress
