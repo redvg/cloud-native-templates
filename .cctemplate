@@ -1,0 +1,12 @@
+{
+    "metadata": {
+        "version": "1"
+    },
+    "templates": [
+        {
+            "path": "server/python-asgi",
+            "name": "Hello web with Python",
+            "description": "ASGI web server with FastAPI framework"
+        },
+    ]
+}
