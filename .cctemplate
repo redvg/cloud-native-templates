@@ -6,7 +6,7 @@
     "templates": [
         {
             "path": "server/python-asgi",
-            "name": "🐍python-asgi",
+            "name": "python-asgi",
             "description": "🐍🐍ASGI web server with FastAPI framework"
         },
         {
@@ -31,12 +31,12 @@
         },
         {
             "path": "platforms/k8s-py-guestbook",
-            "name": "🐳🐳k8s-py-guestbook",
+            "name": "k8s-py-guestbook",
             "description": "🐳k8s Python guestbook"
         },
         {
             "path": "platforms/k8s-go-guestbook",
-            "name": "☸️k8s-go-guestbook",
+            "name": "k8s-go-guestbook",
             "description": "☸️☸️k8s Golang guestbook"
         },
         {
