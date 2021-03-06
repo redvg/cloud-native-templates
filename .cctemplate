@@ -53,6 +53,6 @@
             "path": "platforms/gke-wa-pci",
             "name": "gke-wa-pci",
             "description": "Well-architected PCI-compliant GKE"
-        },
+        }
     ]
 }
