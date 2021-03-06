@@ -1,12 +1,57 @@
 {
     "metadata": {
-        "version": "1"
+        "version": "2"
     },
     "templates": [
         {
             "path": "server/python-asgi",
-            "name": "Hello web with Python",
-            "description": "ASGI web server with FastAPI framework"
+            "name": "🐍python-asgi",
+            "description": "🐍🐍ASGI web server with FastAPI framework"
+        },
+        {
+            "path": "ops/gcp-cloudbuild-cloudrun",
+            "name": "gcp-cloudbuild-cloudrun",
+            "description": "GCP Cloud Build which fetches secrets from Secret Manager, builds & pushes docker image to Artifact Registry and deploys image to Cloud Run"
+        },
+        {
+            "path": "ops/gitlab-gcp-cloudbuild",
+            "name": "gitlab-gcp-cloudbuild",
+            "description": "GitLab CI runner which triggers GCP Cloud Build pipeline on push"
+        },
+        {
+            "path": "ops/gitlab-gcp-terraform",
+            "name": "gitlab-gcp-terraform",
+            "description": "GitLab CI runner which provisions GCP resources with Terraform"
+        },
+        {
+            "path": "platforms/iot-gcp",
+            "name": "iot-gcp",
+            "description": "IoT on GCP"
+        },
+        {
+            "path": "platforms/k8s-py-guestbook",
+            "name": "🐳🐳k8s-py-guestbook",
+            "description": "🐳k8s Python guestbook"
+        },
+        {
+            "path": "platforms/k8s-go-guestbook",
+            "name": "☸️k8s-go-guestbook",
+            "description": "☸️☸️k8s Golang guestbook"
+        },
+        {
+            "path": "platforms/k8s-nodejs-guestbook",
+            "name": "k8s-nodejs-guestbook",
+            "description": "k8s NodeJS guestbook"
+        },
+        {
+            "path": "platforms/gke-wa-shop",
+            "name": "gke-wa-shop",
+            "description": "Well-architected GKE microservices shop"
+        },
+        {
+            "path": "platforms/gke-wa-pci",
+            "name": "gke-wa-pci",
+            "description": "Well-architected PCI-compliant GKE"
         },
     ]
 }
