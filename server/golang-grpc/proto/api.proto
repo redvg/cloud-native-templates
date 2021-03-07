@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package echo_service;
+package proto;
 
 message Request {
   string message  = 1;
