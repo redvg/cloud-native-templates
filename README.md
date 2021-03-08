@@ -66,9 +66,7 @@ Templates & blueprints to facilitate cloud-native development efforts. Can be im
 
 - ![GitLab CI runner which provisions GCP resources with Terraform](ops/gitlab-gcp-terraform) [![Maintainer](https://badgen.net/badge/maintainer/🍭redvg/black)](https://github.com/redvg)
 
-### Web
-
-- ![React web app with Material UI](web/react-material) [![Maintainer](https://badgen.net/badge/maintainer/🍭redvg/black)](https://github.com/redvg)
+- ![k6 CRR & hammer load tests](ops/k6) [![Maintainer](https://badgen.net/badge/maintainer/🍭redvg/black)](https://github.com/redvg)
 
 ## IDEs
 

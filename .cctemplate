@@ -80,9 +80,9 @@
             "description": "Well-architected PCI-compliant GKE"
         },
         {
-            "path": "web/react-material",
-            "name": "☢️react-material"",
-            "description": "React web app with Material UI"
+            "path": "ops/k6",
+            "name": "k6"",
+            "description": "k6 CRR and hammer load test"
         }
     ]
 }
