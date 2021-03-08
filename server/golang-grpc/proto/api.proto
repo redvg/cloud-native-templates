@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-package proto;
+package sampleGRPC;
+
+option go_package = "github.com/shortcut/cloud-native-templates/server/golang-grpc/proto";
 
 message Request {
   string message  = 1;

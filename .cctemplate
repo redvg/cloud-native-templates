@@ -7,7 +7,32 @@
         {
             "path": "server/python-asgi",
             "name": "🐍 python-asgi",
-            "description": "ASGI web server with FastAPI framework"
+            "description": "ASGI web server with FastAPI"
+        },
+        {
+            "path": "server/python-wsgi",
+            "name": "🐍 python-wsgi",
+            "description": "WSGI web server with Flask"
+        },
+        {
+            "path": "server/golang-rpc",
+            "name": "🐹 golang-rpc",
+            "description": "Golang RPC"
+        },
+        {
+            "path": "server/golang-grpc",
+            "name": "🐹 golang-grpc",
+            "description": "Golang gRPC unary"
+        },
+        {
+            "path": "server/golang-grpc",
+            "name": "🐹 golang-kafka",
+            "description": "Golang Kafka publisher & subscriber"
+        },
+        {
+            "path": "server/golang-prom",
+            "name": "🐹 golang-prom",
+            "description": "Golang Prometheus custom metric"
         },
         {
             "path": "ops/gcp-cloudbuild-cloudrun",
@@ -16,12 +41,12 @@
         },
         {
             "path": "ops/gitlab-gcp-cloudbuild",
-            "name": "gitlab-gcp-cloudbuild",
+            "name": "☁️🦊gitlab-gcp-cloudbuild",
             "description": "GitLab CI runner which triggers GCP Cloud Build pipeline on push"
         },
         {
             "path": "ops/gitlab-gcp-terraform",
-            "name": "☁️ gitlab-gcp-terraform",
+            "name": "☁️🦊 gitlab-gcp-terraform",
             "description": "GitLab CI runner which provisions GCP resources with Terraform"
         },
         {
@@ -51,8 +76,13 @@
         },
         {
             "path": "platforms/gke-wa-pci",
-            "name": "☸️ gke-wa-pci",
+            "name": "☸️☁️ gke-wa-pci",
             "description": "Well-architected PCI-compliant GKE"
+        },
+        {
+            "path": "web/react-material",
+            "name": "☢️react-material"",
+            "description": "React web app with Material UI"
         }
     ]
 }
