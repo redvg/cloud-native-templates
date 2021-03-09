@@ -81,8 +81,18 @@
         },
         {
             "path": "ops/k6",
-            "name": "k6"",
-            "description": "k6 CRR and hammer load test"
+            "name": "k6",
+            "description": "Load test with k6: CRR & hammer"
+        },
+        {
+            "path": "ops/airflow-backup",
+            "name": "airflow-backup",
+            "description": "Workflow orchestration with Apache Airflow: GCP Firestore & Memorystore backup and Slack notification"
+        },
+        {
+            "path": "ops/airflow-gcs",
+            "name": "airflow-gcs",
+            "description": "Workflow orchestration with Apache Airflow: synchronize GCP Cloud Storage buckets"
         }
     ]
 }
