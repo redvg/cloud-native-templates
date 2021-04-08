@@ -25,7 +25,7 @@
             "description": "Golang gRPC unary"
         },
         {
-            "path": "server/golang-grpc",
+            "path": "server/golang-kafka",
             "name": "🐹 golang-kafka",
             "description": "Golang Kafka publisher & subscriber"
         },
@@ -50,7 +50,7 @@
             "description": "GitLab CI runner which provisions GCP resources with Terraform"
         },
         {
-            "path": "platforms/iot-gcp",
+            "path": "platforms/iot-on-gcp",
             "name": "☁️ iot-gcp",
             "description": "IoT on GCP"
         },
@@ -68,16 +68,6 @@
             "path": "platforms/k8s-nodejs-guestbook",
             "name": "☸️ k8s-nodejs-guestbook",
             "description": "k8s NodeJS guestbook"
-        },
-        {
-            "path": "platforms/gke-wa-shop",
-            "name": "☸️ gke-wa-shop",
-            "description": "Well-architected GKE microservices shop"
-        },
-        {
-            "path": "platforms/gke-wa-pci",
-            "name": "☸️☁️ gke-wa-pci",
-            "description": "Well-architected PCI-compliant GKE"
         },
         {
             "path": "ops/k6",
